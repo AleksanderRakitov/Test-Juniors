@@ -1,0 +1,39 @@
+.page-header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 100;
+
+  @media (min-width: 1200px) and (max-width: 1440px) {
+    margin: 0;
+  }
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 56px;
+  box-shadow: none;
+}
+
+.page-header__logo {
+  width: 97px;
+  height: 26px;
+
+  @media (min-width: 1100px) {
+    width: 194px;
+    height: 51px;
+  }
+}
+
+.page-header__logo img {
+  width: 97px;
+  height: 26px;
+
+
+  @media (min-width: 1100px) {
+    width: 194px;
+    height: 51px;
+  }
+}

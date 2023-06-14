@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2 {
+  margin:0;
+}
+
+p {
+  margin: 0;
+}
+
+dl,dd {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  padding: 0 16px;
+  max-width: 100%;
+
+
+  @media (min-width: 1200px) {
+    padding: 0 60px;
+    margin: 0 auto;
+  }
+
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+  }
+
+}

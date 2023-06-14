@@ -1,0 +1,24 @@
+.controls {
+  width: 36px;
+  display: grid;
+  grid-template-columns: 6px 6px 6px;
+  column-gap: 9px;
+  margin: 0 auto;
+
+  @media (min-width: 500px) {
+    display: none;
+  }
+}
+
+.controls__button {
+  border: none;
+  max-width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #E0E0E0;
+  cursor: pointer;
+
+  &.current {
+    background-color: #F2B91D;
+  }
+}

@@ -1,0 +1,39 @@
+.page-footer {
+  @media (min-width: 1200px) and (max-width: 1440px) {
+    margin: 0;
+  }
+}
+
+.footer__list {
+  margin-bottom: 40px;
+  padding-top: 8px;
+  position: relative;
+
+  @media (min-width: 900px){
+    margin-bottom: 0;
+    padding-top: 16px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #E0E0E0;
+    top: 0;
+    position: absolute;
+
+
+  }
+}
+
+.footer__item {
+  font-size: 12px;
+  line-height: 20px;
+  color: #142B35;
+  opacity: 0.5;
+}

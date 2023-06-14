@@ -1,0 +1,204 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 900px) {
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 99px;
+  }
+}
+
+.main-nav__link {
+  font-size: 20px;
+  line-height: 23px;
+  color: #142B35;
+
+  @media (min-width: 900px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.main-nav__info {
+  align-self: center;
+  margin-bottom: 32px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px 20px;
+  background-color: #3A98B2;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in;
+
+  &:hover {
+    background-color: #328BA4;
+  }
+
+  @media (min-width: 900px) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.main-nav__phone {
+  @media (min-width: 5px) and (max-width: 900px) {
+    &::before {
+      content: '';
+      position: absolute;
+      right: 60px;
+      top: 10px;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/phone.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 1000px) {
+    padding-left: 16px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -9px;
+      left: 0;
+      width: 17px;
+      height: 17px;
+      background-image: url(../img/icons/phone.svg);
+      background-repeat: no-repeat;
+      background-size: 17px 17px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 58px;
+    border-left: 1px solid #E0E0E0;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 24px;
+      width: 17px;
+      height: 17px;
+      background-image: url(../img/icons/phone.svg);
+      background-repeat: no-repeat;
+      background-size: 17px 17px;
+    }
+  }
+}
+
+.main-nav__number {
+  display: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #142B35;
+
+  @media (min-width: 1000px) {
+    display: inline;
+  }
+}
+
+.main-nav__toogle {
+  position: relative;
+  background-color: transparent;
+  width: 30px;
+  height: 17px;
+  border: none;
+
+  @media (min-width: 900px) {
+    display: none;
+  }
+}
+
+.main-nav--closed {
+  @media (min-width: 5px) and (max-width: 900px) {
+    .main-nav__list {
+      display: none;
+      padding-top: 56px;
+      padding-bottom: 120px;
+    }
+
+    .main-nav__info {
+      display: none;
+    }
+  }
+}
+
+.main-nav--opened {
+  @media (min-width: 5px) and (max-width: 900px) {
+    .main-nav__list {
+      display: block;
+      padding-top: 56px;
+      padding-bottom: 120px;
+    }
+
+    .main-nav__info {
+      display: inline-block;
+    }
+
+    .page-header__container {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+    }
+  }
+}
+
+.main-nav--opened .main-nav__toogle::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 26px;
+  top: -10px;
+  right: 0;
+  cursor: pointer;
+  background-image: url(../img/icons/burger-open.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.main-nav--closed .main-nav__toogle::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 17px;
+  top: -6px;
+  right: 0;
+  cursor: pointer;
+  background-image: url(../img/icons/burger-close.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.main-nav--nojs {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: block;
+  }
+}
+
+
+.main-nav__list {
+  @media (min-width: 900px) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 571px;
+  }
+}
+
+.main-nav__item:not(:last-child) {
+  margin-bottom: 24px;
+
+  @media (min-width: 900px) {
+    margin-right:32px;
+    margin-bottom: 0;
+  }
+}

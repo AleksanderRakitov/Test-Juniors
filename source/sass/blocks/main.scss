@@ -1,0 +1,27 @@
+.main__title {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 27px;
+  color: #142B35;
+}
+
+.main__slogan {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #738697;
+}
+
+.main__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #5B6E76;
+
+  @media (min-width: 900px) {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}

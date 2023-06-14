@@ -1,0 +1,56 @@
+.about__wrapper {
+  padding-bottom: 40px;
+  border-top: 1px solid transparent;
+  background-image: url(../img/picture/promo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/picture/promo2x.png);
+  }
+
+  @media (min-width: 900px) {
+    padding-bottom: 120px;
+    background-image: url(../img/picture/promo-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/picture/promo-desktop2x.png);
+  }
+  }
+}
+
+.about__title {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 15px;
+  padding-left: 8px;
+  border-left: 2px solid #F2B91D;
+
+  @media (min-width: 900px) {
+    margin-top: 350px;
+    padding-right: 40px;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: capitalize;
+  }
+}
+
+.about__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #ffffff;
+
+  @media (min-width: 900px) {
+    padding-right: 40px;
+    font-size: 16px;
+    line-height: 27px;
+  }
+}

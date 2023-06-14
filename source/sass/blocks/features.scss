@@ -1,0 +1,33 @@
+.features__container {
+  display: grid;
+  padding: 40px 0 32px 0;
+  text-align: center;
+
+  @media (min-width: 900px) {
+    padding: 80px 0 40px 0;
+  }
+}
+
+.features__title {
+  order: 2;
+  margin-bottom: 16px;
+
+  @media (min-width: 900px) {
+    font-size: 32px;
+    line-height: 54px;
+  }
+}
+
+.features__slogan {
+  order: 1;
+  margin-bottom: 8px;
+}
+
+.features__description {
+  order: 3;
+}
+
+.features__controls {
+  padding-bottom: 40px;
+}
+
